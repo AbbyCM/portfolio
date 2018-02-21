@@ -1,0 +1,299 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p, h1, h2, h3 {
+    color: #2d3c49;
+}
+
+
+hr {
+    max-width: 1100px;
+    margin-top: 30px;
+    margin-bottom: 20px; 
+    background-color: #7d97ad; 
+    text-align: center;
+    height: 5px;
+}
+
+img {
+    width: 100%;
+    max-height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+div {
+    max-width: 1100px;
+}
+
+a:hover {
+    background-color: #02b3e4;
+}
+
+a:link {
+   text-decoration: none;
+    color: #2d3c49;
+}
+
+a:visited {
+    color: #2d3c49;
+}
+
+
+
+
+
+
+/* Container */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Header */
+
+.header {
+    text-align: right;
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+.logo {
+    width: 10%;
+}
+
+.info {
+    margin-top: -50px;
+    
+}
+
+
+
+/* Picture Box */
+
+.picture {
+    margin: auto;
+    width: 100%;
+    max-height: 600px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* Content */
+
+.row {
+    margin: left; 
+}
+
+.section1 {
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; 
+    margin: auto;
+    width: 100%;
+}
+
+.section2 {
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: auto;
+    width: 100%;
+}
+
+.section3 {
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: auto;
+    width: 100%;
+}
+
+.music {
+    max-width: 1100px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.other {
+    max-width: 1100px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.frontend {
+    max-width: 1100px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+
+/* Projects */
+
+.tidesoflife {
+    max-width: 32%;
+    text-align: justify;
+}
+
+.emotionalconfused {
+    max-width: 32%;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.vonmeiwes {
+    max-width: 32%;
+    padding-left: 20px;
+    margin-right: -90px;
+    text-align: justify;
+}
+
+.mediadesign {
+    max-width: 32%;
+    text-align: justify;
+}
+
+.flederline {
+    max-width: 32%;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.shopping {
+    max-width: 32%;
+    padding-left: 20px;
+    margin-right: -90px;
+    text-align: justify;
+}
+
+.tradingcard {
+    max-width: 32%;
+    text-align: justify;
+}
+
+.comingsoon1 {
+    max-width: 32%;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.comingsoon2 {
+    max-width: 32%;
+    padding-left: 20px;
+    margin-right: -90px;
+    text-align: justify;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.copyright {
+    margin-left: auto;
+    margin-top: 70px;
+}
+
+
+.socialmedia {
+    max-width: 10%;
+    padding: left; 
+    margin-left: auto;
+    margin-top: -60px;
+}
+
+.menu {
+    text-align: center;
+}
+
+/* Impressum */
+
+.impressum {
+    margin: auto;
+    text-align: center;
+}
+
+.disclaimer {
+    font-size: 13px;
+    margin: auto;
+}
+
+
+
+/* Responsive Layout */ 
+
+@media screen and (min-width: 730px) and (max-width: 1023px) {
+    .tidesoflife, .emotionalconfused, .mediadesign, .flederline, .vonmeiwes, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
+        max-width: 60%;
+        text-align: center;
+        margin: auto;
+        padding: 30px;
+    } 
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 729px) {
+    .tidesoflife, .emotionalconfused, .vonmeiwes,  .mediadesign, .flederline, .shopping, .tradingcard, .comingsoon1, .comingsoon2{
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 639px) {
+    .tidesoflife, .emotionalconfused, .vonmeiwes, .mediadesign, .flederline, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 30px
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 539px) {
+    .tidesoflife, .emotionalconfused, .vonmeiwes, .mediadesign, .flederline, .shopping, .tradingcard, .comingsoon1, .comingsoon2, {
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 30px
+    }
+}
+
+
+
+   
+
+@media (max-width: 1023px) {
+    .music, .other, .frontend, {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        max-width: 100%; 
+        text-align: left;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
