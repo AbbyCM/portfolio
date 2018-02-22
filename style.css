@@ -2,13 +2,18 @@ body {
     font-family: 'Fira Sans', sans-serif;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+
 p, h1, h2, h3 {
     color: #2d3c49;
 }
 
 
 hr {
-    max-width: 1100px;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 20px; 
     background-color: #7d97ad; 
@@ -94,7 +99,7 @@ a:visited {
     max-width: 1100px;
     -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1; 
+    flex: 1;
     margin: auto;
     width: 100%;
 }
@@ -140,57 +145,102 @@ a:visited {
 /* Projects */
 
 .tidesoflife {
-    max-width: 32%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .emotionalconfused {
-    max-width: 32%;
     padding-left: 20px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .vonmeiwes {
-    max-width: 32%;
     padding-left: 20px;
     margin-right: -90px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .mediadesign {
-    max-width: 32%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .flederline {
-    max-width: 32%;
     padding-left: 20px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .shopping {
-    max-width: 32%;
     padding-left: 20px;
     margin-right: -90px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;;
 }
 
 .tradingcard {
-    max-width: 32%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;;
 }
 
 .comingsoon1 {
-    max-width: 32%;
     padding-left: 20px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;;
 }
 
 .comingsoon2 {
-    max-width: 32%;
     padding-left: 20px;
     margin-right: -90px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 
@@ -234,62 +284,69 @@ a:visited {
 
 
 
-/* Responsive Layout */ 
+/* Responsive Layout */
 
-@media screen and (min-width: 730px) and (max-width: 1023px) {
-    .tidesoflife, .emotionalconfused, .mediadesign, .flederline, .vonmeiwes, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
-        max-width: 60%;
+@media only screen and (min-width : 1440px) {
+	 .tidesoflife, .emotionalconfused, .mediadesign, .flederline, .vonmeiwes, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 30px;
+    }
+    
+}
+
+
+@media only screen and (min-width : 1024px) {
+	 .tidesoflife, .emotionalconfused, .mediadesign, .flederline, .vonmeiwes, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
+        width: 100%;
         text-align: center;
         margin: auto;
         padding: 30px;
     } 
 }
 
-
-@media screen and (min-width: 640px) and (max-width: 729px) {
-    .tidesoflife, .emotionalconfused, .vonmeiwes,  .mediadesign, .flederline, .shopping, .tradingcard, .comingsoon1, .comingsoon2{
-        max-width: 70%;
+@media only screen and (min-width : 768px) {
+	 .tidesoflife, .emotionalconfused, .mediadesign, .flederline, .vonmeiwes, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
+        width: 100%;
         text-align: center;
         margin: auto;
         padding: 30px;
-    }
-}
+    } 
+}  
 
-@media screen and (min-width: 100px) and (max-width: 639px) {
-    .tidesoflife, .emotionalconfused, .vonmeiwes, .mediadesign, .flederline, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
-        max-width: 100%;
+@media only screen and (min-width : 640px) {
+	 .tidesoflife, .emotionalconfused, .mediadesign, .flederline, .vonmeiwes, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
+        width: 100%;
         text-align: center;
         margin: auto;
-        padding: 30px
-    }
+        padding: 30px;
+    } 
 }
 
-@media screen and (min-width: 100px) and (max-width: 539px) {
-    .tidesoflife, .emotionalconfused, .vonmeiwes, .mediadesign, .flederline, .shopping, .tradingcard, .comingsoon1, .comingsoon2, {
-        max-width: 100%;
+@media only screen and (min-width : 360px) and (max-width: 667px) {
+	 .tidesoflife, .emotionalconfused, .mediadesign, .flederline, .vonmeiwes, .shopping, .tradingcard, .comingsoon1, .comingsoon2 {
+        width: 100%;
         text-align: center;
-        margin: auto;
-        padding: 30px
+        padding: 2px;
+    }
+    hr {
+        width: 100%;
     }
 }
 
 
-
-   
-
-@media (max-width: 1023px) {
-    .music, .other, .frontend, {
+@media (max-width: 640px) {
+	.music, .other, .frontend {
         -webkit-flex-direction: column;
         flex-direction: column;
-        max-width: 100%; 
+        max-width: 100%;
         text-align: left;
         margin: auto;
-    }
+    } 
 }
 
-
-
-
+ 
 
 
 
